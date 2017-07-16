@@ -5,3 +5,5 @@
 - `gem install sass`
 - If that doesn't work... `sudo` it!
 - `sudo gem install sass`
+
+https://github.com/alice-em/sass-demo/blob/master/slide4.md
