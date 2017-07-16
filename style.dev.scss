@@ -1,0 +1,92 @@
+// Variables!
+$lehavre: 'LeHavreLayers-Primary';
+$opensans: 'Open Sans', sans-serif;
+$noto: 'NotoSans';
+$f5: #f5f5f5;
+$darktype: #2e2f34;
+$focustype: #ff7b0a;
+$attention: #eb340a;
+$dd: #ddd;
+$naviBlue: #0054a2;
+$standardBleu: #1267b1;
+$muted: #999;
+$white: #fff;
+$tdcolour: rgba(67, 82, 89, .25);
+$transparent: rgba(0,0,0,0);
+$transblack: rgba(0,0,0,0.7);
+$transwhite: rgba(255, 255, 255, .1);
+$opwhite: rgba(255, 255, 255, .8);
+$box-shadow: 0 2px 5px -2px $dd;
+$box-shadow-hover: 0 2px 5px -2px $darktype;
+$none: 0 0 0 $transparent;
+
+// Style Sheets!
+li.level0 {
+  float: left;
+  margin: 0 !important;
+  padding: 0;
+  border-radius: 2px;
+
+  a {
+    span {
+      padding: 7px 25px 10px;
+      text-decoration: none;
+      color: $f5;
+      background: $transparent;
+      border-radius: 2px 2px 0 0;
+      font-family: $noto;
+      line-height: 22px;
+      transition: all 0.25s;
+      font-size: 20px;
+      font-weight: 400;
+
+      &.ui-menu-icon {
+        display: none !important;
+      }
+    }
+  }
+
+  .level1 {
+    a span {
+      font-size: 14px;
+      font-weight: 300;
+      margin-left: 0;
+    }
+  }
+
+  &:hover {
+    a span {
+      color: $darktype;
+      background: $f5;
+    }
+
+    ul.level0 {
+      display: block;
+      background: $f5;
+      height: initial;
+      padding: 0;
+      box-shadow: 0 5px 5px $tdcolour;
+      top: 48px;
+      left: 11px;
+      border-top: none;
+      border-radius: 0 5px 5px 5px;
+      overflow-y: auto;
+    }
+
+    .level1 {
+      background: $transparent;
+      color: $darktype;
+      display: block;
+      min-width: 250px;
+
+      a span {
+        display: inline;
+        background: $transparent;
+      }
+    }
+
+    ul.level1 {
+      display: none;
+    }
+  }
+}
